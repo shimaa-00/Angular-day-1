@@ -1,0 +1,6 @@
+div {
+  display: inline-block;
+  width: 70%;
+  border: none;
+  border-right: 1px solid black;
+}

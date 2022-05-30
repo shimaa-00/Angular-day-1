@@ -1,0 +1,13 @@
+<div>
+  <p>home works!</p>
+  <ul>
+    <li *ngFor="let c of peopleByCountry" [ngSwitch]="c.country">
+      <p *ngSwitchCase="'USA'" class="text-danger">{{ c.country }}</p>
+      <p *ngSwitchCase="'UK'" class="text-info">{{ c.country }}</p>
+      <p *ngSwitchDefault="">{{ c.country }}</p>
+      <ul>
+        <li *ngFor="let p of c.people">{{ p.name }}</li>
+      </ul>
+    </li>
+  </ul>
+</div>
